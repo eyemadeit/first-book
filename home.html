@@ -5,20 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>First Book: Impact at a Glance</title>
   <link rel="stylesheet" href="css/aos.css">
-  <link rel="stylesheet" href="css/tailwind.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
   <script src="js/jquery.js"></script>
   <script src="js/custom.js"></script>
   <script src="js/aos.js"></script>
 </head>
 <body>
   <div class="header-navigation">
-    <div class="container-block flex justify-between items-center">
+    <div class="container-block d-flex justify-content-between align-items-center">
       <div class="header-logo">
         <img src="assets/icons/firstbook-logo.svg" loading="lazy" alt="FirstBook Logo">
       </div>
       <div class="header-action">
-        <div class="flex">
+        <div class="d-flex align-items-center">
           <button class="header-download-btn"></button>
           <button id="open_sidebar"></button>
         </div>
@@ -30,25 +31,25 @@
       <button id="close_sidebar"></button>
     </div>
     <ul class="header-menu-list">
-      <li class="font-semibold">
+      <li class="font-weight-bold">
         <span>From Our CEO</span>
       </li>
-      <li class="font-semibold">
+      <li class="font-weight-bold">
         <span>First Book: Impact at a Glance</span>
       </li>
-      <li class="font-semibold">
+      <li class="font-weight-bold">
         <span>Our Nationwide COVID-19 Response</span>
       </li>
-      <li class="font-semibold">
+      <li class="font-weight-bold">
         <span>Tools to Engage Children in Age Appropriate Conversations About Race</span>
       </li>
-      <li class="font-semibold">
+      <li class="font-weight-bold">
         <span>New Research and Models to Advance Education Equity</span>
       </li>
-      <li class="font-semibold">
+      <li class="font-weight-bold">
         <span>Looking Forward to 2021</span>
       </li>
-      <li class="font-semibold">
+      <li class="font-weight-bold">
         <span> Taking Action </span>
       </li>
     </ul>
@@ -70,15 +71,15 @@
     <section id="ceo">
       <div class="container-block">
         <h2>From Our CEO</h2>
-        <div class="grid lg:grid-cols-6">
-          <div class="lg:col-span-2 sm:col-span-6">
+        <div class="row">
+          <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 d-flex justify-content-sm-center xs-center-flex">
             <div class="block-ceo text-center">
               <img src="./assets/images/ceo.jpg" alt="">
               <div class="ceo-name">Kyle Zimmer</div>
               <div class="ceo-role">President, CEO, Co-Founder</div>
             </div>
           </div>
-          <div class="lg:col-span-4 sm:col-span-6">
+          <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 mx-3">
             <div class="qoute source-sans-pro">
               <div class="qoute-icon">
                 <img src="./assets/icons/quote.svg" alt="qoute-icon">
@@ -105,20 +106,20 @@
     <section id="impact">
       <div class="container-block">
         <img class="block-decoration" src="./assets/icons/block-b.svg" alt="block-image">
-        <div class="impact-intoduction">
+        <div class="impact-introduction">
           <h2>First Book: Impact at a Glance</h2>
           <div class="description">
             At First Book, we are building a path out of poverty through educational equity. Our purpose is as bold as it is urgent: To create systemic change. To ensure equal access to quality education. To empower every educator and all the children in need who they serve.
           </div>
         </div>
         <div class="impact-main">
-          <div class="grid lg:grid-cols-12 sm:grid-cols-12">
 
-            <div class="col-span-6">
+          <div class="row no-gutters xs-mb-lg">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
               <img src="./assets/images/impact-a.jpg" loading="lazy" alt="500 Members">
             </div>
-            <div class="col-span-6">
-              <div class="flex justify-center items-center">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+              <div class="d-flex justify-content-center align-items-center">
                 <div class="counter-block">
                   <div class="counter-a clarendon">
                     <span 
@@ -139,9 +140,11 @@
                 </div>
               </div>
             </div>
+          </div>
 
-            <div class="col-span-6">
-              <div class="flex justify-center items-center">
+          <div class="row no-gutters reverse-flow xs-mb-lg">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+              <div class="d-flex justify-content-center align-items-center">
                 <div class="counter-block">
                   <div class="counter-a clarendon">
                     <span 
@@ -162,15 +165,17 @@
                 </div>
               </div>
             </div>
-            <div class="col-span-6">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
               <img src="./assets/images/impact-b.jpg" loading="lazy" alt="500 Members">
             </div>
+          </div>
 
-            <div class="col-span-6">
+          <div class="row no-gutters xs-mb-lg">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
               <img src="./assets/images/impact-c.jpg" loading="lazy" alt="500 Members">
             </div>
-            <div class="col-span-6">
-              <div class="flex justify-center items-center">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+              <div class="d-flex justify-content-center align-items-center">
                 <div class="counter-block">
                   <div class="counter-b clarendon">
                     <span 
@@ -183,9 +188,11 @@
                 </div>
               </div>
             </div>
+          </div>
 
-            <div class="col-span-6">
-              <div class="flex justify-center items-center">
+          <div class="row no-gutters reverse-flow xs-mb-lg">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+              <div class="d-flex justify-content-center align-items-center">
                 <div class="counter-block">
                   <div class="counter-b clarendon">
                     <span 
@@ -199,11 +206,66 @@
                 </div>
               </div>
             </div>
-            <div class="col-span-6">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
               <img src="./assets/images/impact-d.jpg" loading="lazy" alt="500 Members">
             </div>
-
           </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="response">
+      <div class="container-block">
+        <img class="block-decoration" src="./assets/icons/block-b.svg" alt="block-image">
+        <div class="response-introduction">
+          <h2>Our Nationwide COVID-19 Response</h2>
+          <div class="description">
+            When schools closed to slow the spread of the virus, millions of children were essentially locked out of their education without access to remote learning. <br>
+            <b>But for every student in need, First Book, its network of educators, and amazing partners have been working day and night to support, provide resources, and ensure that no child falls behind.</b>
+          </div>
+        </div>
+      </div>
+      <div class="row no-gutters">
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 response-item">
+          <img src="/assets/images/response-a.jpg" alt="">
+          <div class="response-card">
+            <div class="response-block">
+              <h3 class="clarendon">COVID-19 Response Survey</h3>
+              <button class="source-sans-pro">READ MORE</button>
+            </div>
+          </div>
+          <div class="overlay"></div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 response-item">
+          <img src="/assets/images/response-b.jpg" alt="">
+          <div class="response-card">
+            <div class="response-block">
+              <h3 class="clarendon">COVID-19 Response Survey</h3>
+              <button class="source-sans-pro">READ MORE</button>
+            </div>
+          </div>
+          <div class="overlay"></div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 response-item">
+          <img src="/assets/images/response-c.jpg" alt="">
+          <div class="response-card">
+            <div class="response-block">
+              <h3 class="clarendon">Creating Learning <br>Connections Initiative</h3>
+              <button class="source-sans-pro">READ MORE</button>
+            </div>
+          </div>
+          <div class="overlay"></div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 response-item">
+          <img src="/assets/images/response-d.jpg" alt="">
+          <div class="response-card">
+            <div class="response-block">
+              <h3 class="clarendon">COVID-19 Response Snapshot</h3>
+              <button class="source-sans-pro">READ MORE</button>
+            </div>
+          </div>
+          <div class="overlay"></div>
         </div>
       </div>
     </section>
@@ -211,5 +273,6 @@
   </div>
 
   <script src="js/purecounter.js"></script>
+  <script src="js/bootstrap.min.js"></script>
 </body>
 </html>
