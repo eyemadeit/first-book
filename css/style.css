@@ -351,6 +351,10 @@ section#response {
   background-size: cover;
 }
 
+section#response .container-block {
+  margin-bottom: 80px;
+}
+
 section#response .response-item {
   overflow: hidden;
   position: relative;

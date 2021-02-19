@@ -307,6 +307,9 @@ section#impact {
 section#response {
   background: url("../assets/backgrounds/background-c.svg");
   @include mixinBG();
+  .container-block {
+    margin-bottom: 80px;
+  }
   .response-item {
     overflow: hidden;
     position: relative;
