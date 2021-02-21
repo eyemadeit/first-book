@@ -1,2 +1,46 @@
-body {
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  /* CEO Section */
+  section#impact {
+    .counter-block {
+      margin-top: 20px;
+      .counter-a {
+        font-size: 20px !important;
+      }
+      .counter-b {
+        font-size: 40px !important;
+      }
+      .counter-description {
+        font-size: 14px;
+      }
+    }
+  }
+
+  /* CEO Section */
+  section#tools {
+    .col-lg-5 {
+      margin-bottom: 1rem;
+    }
+    .tool-box {
+      padding: 24px 30px;
+    }
+    .tool-box > div {
+      display: flex;
+      .number {
+        font-size: 48px !important;
+        font-weight: 900;
+        padding-right: 20px;
+        line-height: 44px;
+      }
+      .tool-text {
+        width: 100%;
+      }
+    }
+    .tool-box-2 {
+      .tool-text {
+        width: 100%;
+        max-width: 100% !important;
+      }
+    }
+  }
 }

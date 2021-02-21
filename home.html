@@ -32,25 +32,25 @@
     </div>
     <ul class="header-menu-list">
       <li class="font-weight-bold">
-        <span>From Our CEO</span>
+        <a href="#ceo">From Our CEO</a>
       </li>
       <li class="font-weight-bold">
-        <span>First Book: Impact at a Glance</span>
+        <a href="#impact">First Book: Impact at a Glance</a>
       </li>
       <li class="font-weight-bold">
-        <span>Our Nationwide COVID-19 Response</span>
+        <a href="#response">Our Nationwide COVID-19 Response</a>
       </li>
       <li class="font-weight-bold">
-        <span>Tools to Engage Children in Age Appropriate Conversations About Race</span>
+        <a href="#">Tools to Engage Children in Age Appropriate Conversations About Race</a>
       </li>
       <li class="font-weight-bold">
-        <span>New Research and Models to Advance Education Equity</span>
+        <a href="#">New Research and Models to Advance Education Equity</a>
       </li>
       <li class="font-weight-bold">
-        <span>Looking Forward to 2021</span>
+        <a href="#">Looking Forward to 2021</a>
       </li>
       <li class="font-weight-bold">
-        <span> Taking Action </span>
+        <a href="#"> Taking Action </a>
       </li>
     </ul>
   </div>
@@ -94,8 +94,27 @@
               First Book started the year by bringing together policy, non-profit, and executive leaders from our corporate partners for our first-ever Co-Authoring Impact Summit. The January Summit showcased how these partnerships have accelerated educational opportunities for millions of children, and engaged leaders in discussions of innovative ways to build momentum.
               <br><br>
               Just two months later, life was drastically changed by the global pandemic – making our work together even more critical.
+              <br><br>
+              <div id="more-content">
+                The COVID-19 pandemic not only exacerbated the educational crisis for children in poverty, it also caused enormous hardship for millions more families. In addition, the issues of racism and inequality came to the forefront again after the killing of George Floyd and others.
+                <br><br>
+                In the pages ahead you’ll read how First Book’s integrated models – amplifying the collective voice of more than half a million educators in the First Book Network – and cross-sector partnerships enabled powerful, educator-driven responses to these challenges.
+                <br><br>
+                You’ll also hear from the real heroes: our nation’s educators. Educators are on a high-wire act, juggling remote and hybrid learning, delivering books to students’ front doors, and going above and beyond. Educators need our help like never before.
+                <br><br>
+                As we look ahead to 2021, it’s clear that the effects of COVID-19 will impact our children and families long after the vaccines are distributed.
+                <br><br>
+                First Book’s systemic approach, driven by educators on the frontlines, provides a powerful and proven combination to address educational inequities.  By actively engaging educators throughout our process, we are piloting, testing, refining, and scaling innovative resources and new collaborations to support educational equity and to further the sector for anyone working in the lives of children in poverty.
+                <br><br>
+                We thank each and every one of you for your support.
+                <br><br>
+                With gratitude, 
+                <br><br>
+                <b>Kyle</b>
+                <br><br>  
+              </div>
             </div>
-            <button class="cst-btn">READ MORE</button>
+            <button class="cst-btn" id="read-more">READ MORE</button>
           </div>
         </div>
       </div>
@@ -232,7 +251,7 @@
           <div class="response-card">
             <div class="response-block">
               <h3 class="clarendon">COVID-19 Response Survey</h3>
-              <button class="source-sans-pro">READ MORE</button>
+              <button class="source-sans-pro" type="button" data-toggle="modal" data-target="#responseA">READ MORE</button>
             </div>
           </div>
           <div class="overlay"></div>
@@ -242,7 +261,7 @@
           <div class="response-card">
             <div class="response-block">
               <h3 class="clarendon">Activation Network Map</h3>
-              <button class="source-sans-pro">READ MORE</button>
+              <button class="source-sans-pro" type="button" data-toggle="modal" data-target="#responseB">READ MORE</button>
             </div>
           </div>
           <div class="overlay"></div>
@@ -252,7 +271,7 @@
           <div class="response-card">
             <div class="response-block">
               <h3 class="clarendon">Creating Learning <br>Connections Initiative</h3>
-              <button class="source-sans-pro">READ MORE</button>
+              <button class="source-sans-pro" type="button" data-toggle="modal" data-target="#responseC">READ MORE</button>
             </div>
           </div>
           <div class="overlay"></div>
@@ -262,16 +281,252 @@
           <div class="response-card">
             <div class="response-block">
               <h3 class="clarendon">COVID-19 Response Snapshot</h3>
-              <button class="source-sans-pro">READ MORE</button>
+              <button class="source-sans-pro" type="button" data-toggle="modal" data-target="#responseD">READ MORE</button>
             </div>
           </div>
           <div class="overlay"></div>
         </div>
       </div>
+      
+      <!-- Modal for Covid 19 response survey -->
+      <div class="modal fade" id="responseA" tabindex="-1" role="dialog" aria-labelledby="responseD" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="row reverse-flow">
+              <div class="col-lg-6">
+                <div class="response-pad-block">
+                  <h4 class="clarendon text-blue font-weight-bold">Covid 19 Response Survey</h4>
+                  <br>
+                  With our partner Intel Corporation®, we conducted a nationwide COVID-19 Response Survey to identify our educators’ key areas of concern regarding how the pandemic was impacting their students and the resources needed to support them.
+                  <br><br>
+                  <b class="text-green clarendon t-20">2,600+</b> educators reported these challenges:
+                  <br>
+                  <ul class="mt-1">
+                    <li><b>Mental/emotional health of kids and families</b> — 87% were more concerned with their students facing mental/emotional health challenges than prior to the pandemic.</li>
+                    <li><b>Access to learning tools and resources</b> — 86% were more concerned about students having no books at home than prior to the pandemic.</li>
+                    <li><b>A widening digital divide</b> — 40% of their students didn’t have access to reliable internet at home and 37% did not have access to functioning digital devices.</li>
+                    <li><b>An extended “summer slide”</b>  — 78% of educators were especially concerned about how the extended learning gap would affect the students they serve.</li>
+                  </ul>  
+                </div>              
+              </div>
+              <div class="col-lg-6 right-img">
+                <button type="button" data-dismiss="modal" id="close_modal"></button>
+                <img src="/assets/images/response-a.jpg" alt="COVID-19 Response Survey">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal for Activation Network Map -->
+      <div class="modal fade" id="responseB" tabindex="-1" role="dialog" aria-labelledby="responseB" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="row reverse-flow">
+              <div class="col-lg-6">
+                <div class="response-pad-block">
+                  <h4 class="clarendon text-blue font-weight-bold">Activation Network Map</h4>
+                  <br>
+                  In partnership with PolicyMap, we launched the COVID-19 Activation Network map, a powerful interactive tool that shows the locations of thousands of educators who volunteered to distribute books and educational resources to their communities during the pandemic.
+                  <br><br>
+                  <b class="text-green clarendon t-20">7,500+</b> educators served as mini distribution hubs for books and other learning tools
+                  <br><br>
+                  <button class="cst-btn mt-3">GO TO MAP</button>
+                </div>              
+              </div>
+              <div class="col-lg-6 right-img">
+                <button type="button" data-dismiss="modal" id="close_modal"></button>
+                <img src="/assets/images/response-b.jpg" alt="Activation Network Map">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal for Creating Learning Connections Initiative -->
+      <div class="modal fade" id="responseC" tabindex="-1" role="dialog" aria-labelledby="responseC" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="row reverse-flow">
+              <div class="col-lg-6">
+                <div class="response-pad-block">
+                  <h4 class="clarendon text-blue font-weight-bold">Creating Learning Connections Initiative</h4>
+                  <br>
+                  With CDW-G, Intel Corporation®, and the Lego Foundation, we provided a new turnkey First Book grants model, which enabled selected school districts to outline their needs for resources to address the digital divide and enable remote learning for more students.
+                  <br><br>
+                  <ul>
+                    <li><b class="clarendon text-green t-20">46 </b>school districts received Creating Learning Connections grants</li>
+                    <li><b class="clarendon text-green t-20">17</b>states impacted with new devices and connectivity awards</li>
+                    <li><b class="clarendon text-green t-20">1,500 </b>new educators received access to First Book resources</li>
+                    <li><b class="clarendon text-green t-20">14,554 </b>devices and digital learning resources from Intel and CDW-G, valued at more than <b class="clarendon text-green t-20">$5 million</b></li>
+                    <li><b class="clarendon text-green t-20">$4,000 </b>to each awarded school district to support home internet connectivity </li>
+                    <li><b class="clarendon text-green t-20">7500 </b>LEGO Education solutions, valued at <b class="clarendon text-green t-20">$2 million</b>,from the LegoLEGO Foundation to support STEAM learning at home and in school</li>
+                  </ul>
+                </div>              
+              </div>
+              <div class="col-lg-6 right-img">
+                <button type="button" data-dismiss="modal" id="close_modal"></button>
+                <img src="/assets/images/response-c.jpg" alt="Creating Learning Connections Initiative">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal for COVID-19 Response Snapshot -->
+      <div class="modal fade" id="responseD" tabindex="-1" role="dialog" aria-labelledby="responseD" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="row reverse-flow">
+              <div class="col-lg-6">
+                <div class="response-pad-block">
+                  <h4 class="clarendon text-blue font-weight-bold">COVID-19 Response Snapshot</h4>
+                  <br>
+                  We engaged with our inspiring educators and generous partners to produce and distribute a range of relevant resources to help our nation’s most disadvantaged students through the pandemic and beyond. Our collective efforts led to:
+                  <br><br> 
+                  <ul>
+                    <li><b class="clarendon text-green t-20">$3.5 million </b>raised for relief efforts</li>
+                    <li><b class="clarendon text-green t-20">8 million </b>additional books donated by publishers;<br>More than 14 million books distributed</li>
+                    <li><b class="clarendon text-green t-20">$3.6 million</b> free digital resources</li>
+                  </ul>
+                  <br>
+                </div>              
+              </div>
+              <div class="col-lg-6 right-img">
+                <button type="button" data-dismiss="modal" id="close_modal"></button>
+                <img src="/assets/images/response-d.jpg" alt="COVID-19 Response Snapshot">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </section>
 
+    <!-- Image with parallax section -->
+    <section id="parallax">
+      <div class="container-block">
+        <div class="row align-items-center mb-5">
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 mb-3">
+            <div class="qoute source-sans-pro">
+              <div class="qoute-icon">
+                <img src="./assets/icons/qoute-b.svg" alt="qoute-icon">
+              </div>
+              These students find themselves at a learning disadvantage. We surveyed families, discovering many have only cellphones as their sole access to the internet; no computers, no internet at home, and when available, they have multiple siblings and adults competing for these devices.
+            </div>
+            <h5 class="clarendon text-blue mt-3 mb-3">
+              <span class="font-weight-bold">Educator from Klamath Falls City Schools,</span>
+              <br>Klamath Falls, OR
+            </h5>
+          </div>
+          <div class="col-lg-5 px-1 col-md-6 col-sm-12 col-xs-12">
+            <img src="./assets/images/image-a.jpg" alt="Qoutation image">
+            <div class="small-text mt-3">
+              First Book’s innovative collaborations brought technology tools and resources to more than 46 school districts in 17 states across the country.
+            </div>
+          </div>
+        </div>
+        <!-- data-rellax-percentage="2" -->
+        <!-- <div class="row rellax-container">
+          <div class="col-lg-6 rellax" data-rellax-speed="4">
+            <img class="img-1" src="/assets/images/image-b.jpg" alt="">
+          </div>
+          <div class="col-lg-6 rellax" data-rellax-speed="-6">
+            <img class="img-2" src="/assets/images/image-c.jpg" alt="">
+          </div>
+        </div> -->
+      </div>
+    </section>
+
+    <!-- Section Tools -->
+    <section id="tools">
+      <div class="container-block">
+        <div class="text-center mb-5">
+          <img class="block-decoration" src="./assets/icons/block.svg" alt="block-image">
+        </div>
+        <div class="sub-max-container">
+          <h2 class="text-green">Tools to Engage Children in Age-Appropriate Conversations About Race</h2>
+          <div class="source-sans-pro sub-intro"> 
+            2020 was painfully punctuated by a dramatic increase in racist discourse and violence that impacted our communities. Racial equity and diversity have always been core to our mission at First Book, and with our long-term partner Pizza Hut, our Diversity & Inclusion Needs Assessment asked educators about the issue and what resources, if any, they needed.
+            <br><br>
+          </div>
+          <div class="row mt-5">
+            <div class="col-lg-5 col-md-5">
+              <div class="tool-box d-flex">
+                <div>
+                  <div class="number clarendon text-green">
+                    66%
+                  </div>
+                  <div class="tool-text">
+                    of respondents would like to engage their students in conversations about race.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-7 col-md-7">
+              
+              <div class="row">
+
+                <div class="col-lg-12 mb-3">
+                  <div class="tool-box-2 d-flex">
+                    <div class="number clarendon text-green">
+                      53%
+                    </div>
+                    <div class="tool-text">
+                      of respondents said their school does not provide training resources on the topic of race and racism.
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="tool-box-2 d-flex">
+                    <div class="number clarendon text-green">
+                      53%
+                    </div>
+                    <div class="tool-text">
+                      of respondents said their school does not provide training resources on the topic of race and racism.
+                    </div>
+                  </div>
+                </div>    
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="barriers">
+          <h4 class="clarendon mb-3">Educators’ most common barriers to race-related conversations:</h4>
+          <div class="row justify-content-center">
+            <div class="col-lg-2" data-aos="fade-right" data-aos-duration="500" data-aos-delay="300">
+              <div class="barrier-num clarendon text-green">1</div>
+              <div class="barrier-text">Feeling self-conscious about having these conversations with kids from backgrounds different from the educator</div>
+            </div>
+            <div class="col-lg-2" data-aos="fade-right" data-aos-duration="500" data-aos-delay="600">
+              <div class="barrier-num clarendon text-green">2</div>
+              <div class="barrier-text">Concerns regarding the age-appropriateness of topics</div>
+            </div>
+            <div class="col-lg-2" data-aos="fade-right" data-aos-duration="500" data-aos-delay="900">
+              <div class="barrier-num clarendon text-green">3</div>
+              <div class="barrier-text">Fear of using the wrong language</div>
+            </div>
+            <div class="col-lg-2" data-aos="fade-right" data-aos-duration="500" data-aos-delay="1200">
+              <div class="barrier-num clarendon text-green">4</div>
+              <div class="barrier-text">Fear of parent or community pushback</div>
+            </div>
+            <div class="col-lg-2" data-aos="fade-right" data-aos-duration="500" data-aos-delay="1500">
+              <div class="barrier-num clarendon text-green">5</div>
+              <div class="barrier-text">Lack of personal knowledge</div>
+            </div>
+            
+          </div>
+        </div>
+
+      </div>
+    </section>
   </div>
 
+  <script src="js/rellax.js"></script>
+  <script>
+   var rellax = new Rellax('.rellax');
+  </script>
   <script src="js/purecounter.js"></script>
   <script src="js/bootstrap.min.js"></script>
 </body>

@@ -1,1 +1,42 @@
-/* No CSS *//*# sourceMappingURL=responsive.css.map */
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  /* CEO Section */
+  section#impact .counter-block {
+    margin-top: 20px;
+  }
+  section#impact .counter-block .counter-a {
+    font-size: 20px !important;
+  }
+  section#impact .counter-block .counter-b {
+    font-size: 40px !important;
+  }
+  section#impact .counter-block .counter-description {
+    font-size: 14px;
+  }
+  /* CEO Section */
+  section#tools .col-lg-5 {
+    margin-bottom: 1rem;
+  }
+  section#tools .tool-box {
+    padding: 24px 30px;
+  }
+  section#tools .tool-box > div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  section#tools .tool-box > div .number {
+    font-size: 48px !important;
+    font-weight: 900;
+    padding-right: 20px;
+    line-height: 44px;
+  }
+  section#tools .tool-box > div .tool-text {
+    width: 100%;
+  }
+  section#tools .tool-box-2 .tool-text {
+    width: 100%;
+    max-width: 100% !important;
+  }
+}
+/*# sourceMappingURL=responsive.css.map */
