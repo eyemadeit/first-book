@@ -33,6 +33,11 @@ button {
   display: flex;
 }
 
+.fit-img {
+  width: 100%;
+  height: auto;
+}
+
 .t-20 {
   font-size: 18px;
 }
@@ -61,21 +66,13 @@ button {
   color: #fcb331 !important;
 }
 
-.modal {
-  background: rgba(30, 55, 98, 0.4) !important;
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
 }
 
-/* Extra Small Devices, Phones */
-@media only screen and (max-width: 576px) {
-  .xs-center-flex {
-    justify-content: center !important;
-  }
-  .reverse-flow {
-    flex-direction: column-reverse !important;
-  }
-  .xs-mb-lg {
-    margin-bottom: 50px;
-  }
+.modal {
+  background: rgba(30, 55, 98, 0.4) !important;
 }
 
 .container-block {
@@ -330,7 +327,7 @@ section#response {
       width: 100%;
       height: 100%;
       object-fit: cover;
-      transition: all ease 300ms;
+      transition: all ease 500ms;
     }
   }
   h2 {
@@ -350,18 +347,18 @@ section#response {
     cursor: pointer;
     z-index: 2;
     .response-block {
-      transition: all ease 300ms;
+      transition: all ease 500ms;
       border-left: 3.5px solid transparent;
       padding-left: 10px;
       z-index: 2;
       h3 {
         color: white;
-        transition: all ease 300ms;
+        transition: all ease 500ms;
         margin-left: 4px;
       }
     }
     button {
-      transition: all ease 300ms;
+      transition: all ease 500ms;
       background: transparent;
       color: transparent;
       font-size: 18px;
@@ -385,14 +382,14 @@ section#response {
     &:hover {
       img {
         transform: scale(1.1);
-        transition: all ease 300ms;
+        transition: all ease 500ms;
       }
       .response-block {
         border-left: 3.5px solid #fcb331;
         transform: scale(1);
         h3 {
           margin-bottom: 35px;
-          transition: all ease 300ms;
+          transition: all ease 500ms;
         }
         button {
           color: white;
@@ -562,5 +559,243 @@ section#tools {
       font-weight: 600;
       opacity: 0.9;
     }
+  }
+}
+
+section#educators-series {
+  background: #317851;
+  padding-bottom: 60px;
+  h2 {
+    padding-top: 50px;
+    text-align: center;
+    font-weight: 500;
+  }
+  .sub-intro {
+    max-width: 700px;
+    width: 100%;
+    margin: 20px auto;
+    text-align: center;
+    color: #ffffff;
+    a {
+      text-decoration: underline;
+      color: #fcb331;
+    }
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  ul {
+    margin-top: 20px;
+    list-style-type: none;
+    padding-left: 0px;
+    color: white;
+    span {
+      color: #fcb331;
+      font-weight: 500;
+      font-family: "Clarendon", sans-serif;
+      font-size: 20px;
+    }
+  }
+}
+
+section#diversity {
+  background: url("../assets/backgrounds/background-e.svg");
+  @include mixinBG();
+  padding-top: 60px;
+  padding-bottom: 100px;
+  h2 {
+    max-width: 400px;
+    margin-bottom: 20px;
+  }
+  .description {
+    max-width: 450px;
+  }
+  #relative {
+    position: relative;
+    height: 400px;
+    max-width: 490px;
+    width: 100%;
+    margin: 0 auto;
+    .english {
+      position: absolute;
+      cursor: pointer;
+      z-index: 2;
+      transform: translate(0px, 0px);
+
+      animation-name: toFrontA;
+      animation-duration: 500ms;
+      animation-timing-function: ease-in;
+      animation-delay: 0s;
+      animation-direction: alternate;
+      animation-fill-mode: forwards;
+    }
+    .spanish {
+      position: absolute;
+      cursor: pointer;
+      transform: translate(160px, 110px);
+
+      animation-name: toBackA;
+      animation-duration: 500ms;
+      animation-timing-function: ease-in;
+      animation-delay: 0s;
+      animation-direction: alternate;
+      animation-fill-mode: forwards;
+    }
+
+    @keyframes toBackA {
+      0% {
+        transform: translate(0px, 0px);
+        opacity: 1;
+      }
+      50% {
+        transform: translate(-20px, -10px);
+        opacity: 0.8;
+      }
+      100% {
+        transform: translate(160px, 110px);
+        opacity: 0.5;
+        z-index: 1;
+      }
+    }
+
+    @keyframes toFrontA {
+      0% {
+        transform: translate(160px, 110px);
+      }
+      50% {
+        transform: translate(170px, 120px);
+      }
+      100% {
+        transform: translate(0px, 0px);
+        z-index: 3;
+      }
+    }
+
+    &.clicked {
+      .english {
+        animation-name: toBackA;
+        animation-duration: 500ms;
+        animation-timing-function: ease;
+        animation-delay: 0s;
+        animation-direction: alternate;
+        animation-fill-mode: forwards;
+      }
+      .spanish {
+        animation-name: toFrontA;
+        animation-duration: 500ms;
+        animation-timing-function: ease;
+        animation-delay: 0s;
+        animation-direction: alternate;
+        animation-fill-mode: forwards;
+      }
+    }
+  }
+
+  .qoute {
+    position: relative;
+    font-size: 22px;
+    font-style: italic;
+    color: #404042;
+    width: 100%;
+    max-width: 650px;
+    width: 100%;
+    margin: 40px auto 30px auto;
+    .qoute-icon {
+      position: absolute;
+      top: -10px;
+      left: -10px;
+      img {
+        height: 80px;
+      }
+    }
+    h5,
+    span {
+      font-style: unset !important;
+    }
+  }
+}
+
+section#equity {
+  background: url("../assets/backgrounds/background-f.svg");
+  @include mixinBG();
+  padding-bottom: 100px;
+  .equity-introduction {
+    max-width: 600px;
+  }
+  .title-text {
+    font-size: 20px;
+    width: 100%;
+    max-width: 460px;
+  }
+
+  .data-content {
+    margin-top: 30px;
+    border: 2px solid #317851;
+    border-radius: 22px;
+    padding: 20px 20px;
+    .number {
+      font-size: 34px;
+      font-weight: 600;
+      line-height: 30px;
+      margin-bottom: 12px;
+    }
+    .text {
+      font-size: 13px;
+    }
+  }
+
+  .girl {
+    max-width: 460px;
+    width: 100%;
+  }
+
+  a {
+    text-decoration: underline;
+  }
+
+  .content {
+    max-width: 460px;
+    ul {
+      padding-left: 24px;
+    }
+  }
+}
+
+section#forward {
+  background: url("../assets/backgrounds/background-h.svg");
+  @include mixinBG();
+  padding-bottom: 100px;
+  position: relative;
+  .container-block {
+    position: relative;
+    z-index: 2;
+  }}
+  .forward-introduction {
+    padding-top: 80px;
+  }
+  .description {
+    color: white;
+    max-width: 700px;
+  }
+  .sub-container {
+    max-width: 700px;
+    width: 100%;
+    .small-text {
+      color: white;
+      font-size: 14px;
+      b {
+        font-weight: 900;
+      }
+    }
+  }
+  img {
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translate(-0%, -50%);
+    z-index: 0;
   }
 }

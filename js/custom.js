@@ -26,4 +26,8 @@ $(document).ready(function () {
     }
     $("#more-content").toggleClass("more");
   });
+
+  $(".switch").click(function () {
+    $("#relative").toggleClass("clicked");
+  });
 });

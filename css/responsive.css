@@ -39,4 +39,39 @@
     max-width: 100% !important;
   }
 }
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 576px) {
+  .xs-center-flex {
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+  .reverse-flow {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: reverse !important;
+        -ms-flex-direction: column-reverse !important;
+            flex-direction: column-reverse !important;
+  }
+  .xs-mb-lg {
+    margin-bottom: 50px;
+  }
+  section#diversity #relative {
+    left: -60px;
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .firstbook-main-content h1 {
+    font-size: 38px !important;
+    line-height: 32px !important;
+  }
+  section#diversity #relative {
+    left: -60px;
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6);
+  }
+}
 /*# sourceMappingURL=responsive.css.map */

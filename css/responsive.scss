@@ -44,3 +44,37 @@
     }
   }
 }
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 576px) {
+  .xs-center-flex {
+    justify-content: center !important;
+  }
+  .reverse-flow {
+    flex-direction: column-reverse !important;
+  }
+  .xs-mb-lg {
+    margin-bottom: 50px;
+  }
+  section#diversity {
+    #relative {
+      left: -60px;
+      transform: scale(0.7);
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .firstbook-main-content {
+    h1 {
+      font-size: 38px !important;
+      line-height: 32px !important;
+    }
+  }
+  section#diversity {
+    #relative {
+      left: -60px;
+      transform: scale(0.6);
+    }
+  }
+}
