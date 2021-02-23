@@ -38,6 +38,27 @@
     width: 100%;
     max-width: 100% !important;
   }
+  section#parallax .fit-img {
+    display: block;
+  }
+  section#parallax .scroll-container {
+    display: none;
+  }
+  section#forward {
+    padding-bottom: 100px;
+  }
+  footer .download {
+    padding: 60px 0;
+  }
+  footer .download button {
+    margin-top: 10px !important;
+  }
+  footer #backFirstBook {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    margin: 10px auto;
+  }
 }
 
 /* Extra Small Devices, Phones */
@@ -61,6 +82,15 @@
     -webkit-transform: scale(0.7);
             transform: scale(0.7);
   }
+  footer #backFirstBook {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    margin: 20px auto;
+  }
+  footer .social-media {
+    text-align: center !important;
+  }
 }
 
 @media only screen and (max-width: 480px) {
@@ -72,6 +102,27 @@
     left: -60px;
     -webkit-transform: scale(0.6);
             transform: scale(0.6);
+  }
+  #sidebar-navigation {
+    right: -95vw;
+    width: 95vw;
+  }
+  #sidebar-navigation .header-menu-list {
+    margin: 50px 40px 40px 40px;
+  }
+  #sidebar-navigation .header-menu-list li {
+    font-size: 18px;
+  }
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px) {
+  .header-menu-list {
+    margin: 20px 40px 40px 40px !important;
+  }
+  .header-menu-list li {
+    font-size: 16px !important;
+    margin-bottom: 16px !important;
   }
 }
 /*# sourceMappingURL=responsive.css.map */
