@@ -320,6 +320,14 @@ section#ceo #more-content.more {
   display: block;
 }
 
+section#ceo #read-more {
+  background: transparent;
+}
+
+section#ceo #read-more:hover {
+  background: #008ec6;
+}
+
 section#impact {
   background: url("../assets/backgrounds/background-b.svg");
   background-position: center;

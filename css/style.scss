@@ -284,6 +284,12 @@ section#ceo {
       display: block;
     }
   }
+  #read-more {
+    background: transparent;
+    &:hover {
+      background: #008ec6;
+    }
+  }
 }
 
 section#impact {
