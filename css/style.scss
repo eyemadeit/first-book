@@ -635,15 +635,25 @@ section#addressing-systemic-racism {
 section#educators-series {
   background: #317851;
   padding-bottom: 60px;
+  padding-top: 50px;
   h2 {
     padding-top: 50px;
     text-align: center;
     font-weight: 500;
   }
+
+  .content {
+    b {
+      font-size: 22px;
+      font-family: "Clarendon", sans-serif;
+      font-weight: 500 !important;
+    }
+  }
   .sub-intro {
     max-width: 700px;
     width: 100%;
     margin: 20px auto;
+    margin-bottom: 50px;
     text-align: center;
     color: #ffffff;
     a {
