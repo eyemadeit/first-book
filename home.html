@@ -14,6 +14,7 @@
     <title>First Book: Impact at a Glance</title>
     <link rel="stylesheet" href="css/aos.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/odometer-theme-default.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/responsive.css" />
     <script src="js/jquery.js"></script>
@@ -46,33 +47,31 @@
       </div>
       <ul class="header-menu-list">
         <li class="font-weight-bold">
-          <a class="nav-links" id="link-ceo" href="#ceo">From Our CEO</a>
+          <a class="nav-links" href="#from-our-ceo">From Our CEO</a>
         </li>
         <li class="font-weight-bold">
-          <a class="nav-links" id="link-impact" href="#impact">At A Glance</a>
+          <a class="nav-links" href="#at-a-glance">At A Glance</a>
         </li>
         <li class="font-weight-bold">
-          <a class="nav-links" id="link-response" href="#response"
-            >Combating COVID-19</a
-          >
+          <a class="nav-links" href="#combating-covid-19">Combating COVID-19</a>
         </li>
         <li class="font-weight-bold">
-          <a class="nav-links" id="link-tools" href="#tools"
+          <a class="nav-links" href="#addressing-systemic-racism"
             >Addressing Systemic Racism</a
           >
         </li>
         <li class="font-weight-bold">
-          <a class="nav-links" id="link-research" href="#research"
+          <a class="nav-links" href="#research-and-insights"
             >Research & Insights</a
           >
         </li>
         <li class="font-weight-bold">
-          <a class="nav-links" id="link-forward" href="#forward"
+          <a class="nav-links" href="#looking-forward-to-2021"
             >Looking Forward to 2021</a
           >
         </li>
         <li class="font-weight-bold">
-          <a class="nav-links" id="link-action" href="#action">Taking Action</a>
+          <a class="nav-links" href="#taking-action">Taking Action</a>
         </li>
       </ul>
     </div>
@@ -81,10 +80,20 @@
       <div class="intro-container">
         <div class="container-block">
           <div class="main-title">
-            <h1 class="clarendon text-primary">
+            <h1
+              class="clarendon text-primary"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+            >
               Stories of Innovation <br />and Resilience
             </h1>
-            <h4 class="source-sans-pro text-white">
+            <h4
+              class="source-sans-pro text-white"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-delay="1200"
+              data-aos-offset="0"
+            >
               FIRST BOOK 2020 IMPACT REPORT
             </h4>
           </div>
@@ -97,21 +106,21 @@
       </div>
 
       <!-- Section CEO -->
-      <section id="ceo" class="section-scroll">
+      <section id="from-our-ceo" class="section-scroll">
         <div class="container-block">
-          <h2>From Our CEO</h2>
+          <h2 data-aos="fade-right">From Our CEO</h2>
           <div class="row">
             <div
               class="col-lg-3 col-md-3 col-sm-12 col-xs-12 d-flex justify-content-sm-center xs-center-flex"
             >
-              <div class="block-ceo text-center">
-                <img src="./assets/images/ceo.jpg" alt="" />
+              <div class="block-ceo text-center" data-aos="fade-up">
+                <img src="./assets/images/ceo.jpg" alt="Ceo image" />
                 <div class="ceo-name">Kyle Zimmer</div>
                 <div class="ceo-role">President, CEO, Co-Founder</div>
               </div>
             </div>
             <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 mx-3">
-              <div class="qoute source-sans-pro">
+              <div class="qoute source-sans-pro" data-aos="fade-up">
                 <div class="qoute-icon">
                   <img src="./assets/icons/quote.svg" alt="qoute-icon" />
                 </div>
@@ -119,7 +128,7 @@
                 growing up in poverty are not an afterthought, but a significant
                 force for educational equity.
               </div>
-              <div class="ceo-message">
+              <div class="ceo-message" data-aos="fade-up" data-aos-delay="500">
                 Dear Friends,
                 <br /><br />
                 It has become a cliché to describe the challenges of 2020 – so I
@@ -168,7 +177,12 @@
                   <br /><br />
                   We thank each and every one of you for your support.
                   <br /><br />
-                  With gratitude,
+                  With gratitude,<br />
+                  <img
+                    src="./assets/images/signature.png"
+                    height="50px"
+                    alt="Kyle Zimmer Signature"
+                  />
                   <br />
                   Kyle
                   <br />
@@ -182,7 +196,7 @@
 
       <!-- Section Impact -->
 
-      <section id="impact" class="section-scroll">
+      <section id="at-a-glance" class="section-scroll">
         <div class="container-block">
           <img
             class="block-decoration"
@@ -190,19 +204,20 @@
             alt="block-image"
           />
           <div class="impact-introduction">
-            <h2>Impact at a Glance</h2>
-            <div class="description">
+            <h2 data-aos="fade-right">Impact at a Glance</h2>
+            <div class="description" data-aos="fade-right" data-aos-delay="500">
               At First Book, we are building a path out of poverty through
               educational equity. Our purpose is as bold as it is urgent: To
               create systemic change. To ensure equal access to quality
-              education. To empower every educator and all the children in need
-              who they serve.
+              education. To empower <i><b>every</b></i> educator and
+              <i><b>all</b></i> the children in need whom they serve.
             </div>
           </div>
           <div class="impact-main">
             <div class="row no-gutters xs-mb-lg">
               <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                 <img
+                  data-aos="fade-right"
                   src="./assets/images/impact-a.jpg"
                   loading="lazy"
                   alt="500 Members"
@@ -210,25 +225,15 @@
               </div>
               <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                 <div class="d-flex justify-content-center align-items-center">
-                  <div class="counter-block">
+                  <div class="counter-block" data-aos="fade-left">
                     <div class="counter-a clarendon">
-                      <span
-                        data-purecounter-start="0"
-                        data-purecounter-end="500"
-                        class="purecounter"
-                      ></span
-                      >,000+
+                      <span id="odometer2" class="odometer">000000</span>+
                     </div>
                     <div class="counter-description">
                       registered members, with
                     </div>
                     <div class="counter-b clarendon">
-                      <span
-                        data-purecounter-start="0"
-                        data-purecounter-end="50"
-                        class="purecounter"
-                      ></span
-                      >,000+
+                      <span id="odometer1" class="odometer">00000</span>+
                     </div>
                     <div class="counter-description">new members in 2020</div>
                   </div>
@@ -239,25 +244,15 @@
             <div class="row no-gutters reverse-flow xs-mb-lg">
               <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                 <div class="d-flex justify-content-center align-items-center">
-                  <div class="counter-block">
+                  <div class="counter-block" data-aos="fade-right">
                     <div class="counter-a clarendon">
-                      <span
-                        data-purecounter-start="0"
-                        data-purecounter-end="15"
-                        class="purecounter"
-                      ></span>
-                      million
+                      <span id="odometer3" class="odometer">00</span> million
                     </div>
                     <div class="counter-description">
                       children reached, with
                     </div>
                     <div class="counter-b clarendon">
-                      <span
-                        data-purecounter-start="0"
-                        data-purecounter-end="5"
-                        class="purecounter"
-                      ></span>
-                      million
+                      <span id="odometer4" class="odometer">0</span> million
                     </div>
                     <div class="counter-description">
                       children served in 2020
@@ -267,6 +262,7 @@
               </div>
               <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                 <img
+                  data-aos="fade-left"
                   src="./assets/images/impact-b.jpg"
                   loading="lazy"
                   alt="500 Members"
@@ -277,6 +273,7 @@
             <div class="row no-gutters xs-mb-lg">
               <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                 <img
+                  data-aos="fade-right"
                   src="./assets/images/impact-c.jpg"
                   loading="lazy"
                   alt="500 Members"
@@ -284,14 +281,9 @@
               </div>
               <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                 <div class="d-flex justify-content-center align-items-center">
-                  <div class="counter-block">
+                  <div class="counter-block" data-aos="fade-left">
                     <div class="counter-b clarendon">
-                      <span
-                        data-purecounter-start="0"
-                        data-purecounter-end="200"
-                        class="purecounter"
-                      ></span>
-                      million
+                      <span id="odometer5" class="odometer">000</span> million
                     </div>
                     <div class="counter-description">
                       books and resources distributed to date
@@ -304,15 +296,9 @@
             <div class="row no-gutters reverse-flow xs-mb-lg">
               <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                 <div class="d-flex justify-content-center align-items-center">
-                  <div class="counter-block">
+                  <div class="counter-block" data-aos="fade-right">
                     <div class="counter-b clarendon">
-                      <span
-                        data-purecounter-start="0"
-                        data-purecounter-end="18.6"
-                        data-purecounter-decimals="1"
-                        class="purecounter"
-                      ></span>
-                      million
+                      <span id="odometer6" class="odometer">000</span> million
                     </div>
                     <div class="counter-description">
                       books and resources distributed through the First Book
@@ -323,6 +309,7 @@
               </div>
               <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                 <img
+                  data-aos="fade-left"
                   src="./assets/images/impact-d.jpg"
                   loading="lazy"
                   alt="500 Members"
@@ -335,19 +322,19 @@
 
       <!-- Section Response -->
 
-      <section id="response" class="section-scroll">
-        <div class="container-block">
+      <section id="combating-covid-19" class="section-scroll">
+        <div class="container-block mt-4">
           <img
             class="block-decoration"
             src="./assets/icons/block-b.svg"
             alt="block-image"
           />
           <div class="response-introduction">
-            <h2>Our Nationwide COVID-19 Response</h2>
-            <div class="description">
+            <h2 data-aos="fade-right">Our Nationwide COVID-19 Response</h2>
+            <div class="description" data-aos="fade-right" data-aos-delay="500">
               When schools closed to slow the spread of the virus, millions of
               children were essentially locked out of their education without
-              access to remote learning. <br />
+              access to remote learning.
               <b
                 >But for every student in need, First Book, its network of
                 educators, and amazing partners have been working day and night
@@ -358,72 +345,60 @@
           </div>
         </div>
         <div class="row no-gutters">
-          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 response-item">
+          <div
+            class="col-lg-6 col-md-6 col-sm-12 col-xs-12 response-item"
+            data-toggle="modal"
+            data-target="#responseA"
+          >
             <img src="/assets/images/response-a.jpg" alt="" />
             <div class="response-card">
               <div class="response-block">
                 <h3 class="clarendon">COVID-19 Response Survey</h3>
-                <button
-                  class="source-sans-pro"
-                  type="button"
-                  data-toggle="modal"
-                  data-target="#responseA"
-                >
-                  READ MORE
-                </button>
+                <button class="source-sans-pro" type="button">READ MORE</button>
               </div>
             </div>
             <div class="overlay"></div>
           </div>
-          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 response-item">
+          <div
+            class="col-lg-6 col-md-6 col-sm-12 col-xs-12 response-item"
+            data-toggle="modal"
+            data-target="#responseB"
+          >
             <img src="/assets/images/response-b.jpg" alt="" />
             <div class="response-card">
               <div class="response-block">
                 <h3 class="clarendon">Activation Network Map</h3>
-                <button
-                  class="source-sans-pro"
-                  type="button"
-                  data-toggle="modal"
-                  data-target="#responseB"
-                >
-                  READ MORE
-                </button>
+                <button class="source-sans-pro" type="button">READ MORE</button>
               </div>
             </div>
             <div class="overlay"></div>
           </div>
-          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 response-item">
+          <div
+            class="col-lg-6 col-md-6 col-sm-12 col-xs-12 response-item"
+            data-toggle="modal"
+            data-target="#responseC"
+          >
             <img src="/assets/images/response-c.jpg" alt="" />
             <div class="response-card">
               <div class="response-block">
                 <h3 class="clarendon">
                   Creating Learning <br />Connections Initiative
                 </h3>
-                <button
-                  class="source-sans-pro"
-                  type="button"
-                  data-toggle="modal"
-                  data-target="#responseC"
-                >
-                  READ MORE
-                </button>
+                <button class="source-sans-pro" type="button">READ MORE</button>
               </div>
             </div>
             <div class="overlay"></div>
           </div>
-          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 response-item">
+          <div
+            class="col-lg-6 col-md-6 col-sm-12 col-xs-12 response-item"
+            data-toggle="modal"
+            data-target="#responseD"
+          >
             <img src="/assets/images/response-d.jpg" alt="" />
             <div class="response-card">
               <div class="response-block">
                 <h3 class="clarendon">COVID-19 Response Snapshot</h3>
-                <button
-                  class="source-sans-pro"
-                  type="button"
-                  data-toggle="modal"
-                  data-target="#responseD"
-                >
-                  READ MORE
-                </button>
+                <button class="source-sans-pro" type="button">READ MORE</button>
               </div>
             </div>
             <div class="overlay"></div>
@@ -579,7 +554,7 @@
                         districts received Creating Learning Connections grants
                       </li>
                       <li>
-                        <b class="clarendon text-green t-20">17</b>states
+                        <b class="clarendon text-green t-20">17 </b>states
                         impacted with new devices and connectivity awards
                       </li>
                       <li>
@@ -600,9 +575,9 @@
                       <li>
                         <b class="clarendon text-green t-20">7,500 </b>LEGO
                         Education solutions, valued at
-                        <b class="clarendon text-green t-20">$2 million</b>,from
-                        the LEGO Foundation to support STEAM learning at home
-                        and in school
+                        <b class="clarendon text-green t-20">$2 million,</b>
+                        from the LEGO Foundation to support STEAM learning at
+                        home and in school
                       </li>
                     </ul>
                   </div>
@@ -685,7 +660,10 @@
       <section id="parallax">
         <div class="container-block">
           <div class="row align-items-center mb-5">
-            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 mb-3">
+            <div
+              class="col-lg-6 col-md-6 col-sm-12 col-xs-12 mb-3"
+              data-aos="fade-right"
+            >
               <div class="qoute source-sans-pro">
                 <div class="qoute-icon">
                   <img src="./assets/icons/qoute-b.svg" alt="qoute-icon" />
@@ -703,7 +681,11 @@
                 <br />Klamath Falls, OR
               </h5>
             </div>
-            <div class="col-lg-5 px-1 col-md-6 col-sm-12 col-xs-12">
+            <div
+              class="col-lg-5 px-1 col-md-6 col-sm-12 col-xs-12"
+              data-aos="fade-up"
+              data-aos-delay="1000"
+            >
               <img src="./assets/images/image-a.jpg" alt="Qoutation image" />
               <div class="small-text mt-3">
                 First Book’s innovative collaborations brought technology tools
@@ -712,59 +694,48 @@
               </div>
             </div>
           </div>
-          <img
-            class="fit-img mt-3 mb-5"
-            src="/assets/images/merge.png"
-            alt="Happy Children"
-          />
-          <div class="scroll-container">
-            <div class="row">
-              <div
-                class="col-lg-6 col-md-6 scroll-item text-center"
-                data-rate="-0.4"
-                data-direction="vertical"
-              >
-                <img class="img-1" src="/assets/images/image-b.jpg" alt="" />
-              </div>
-              <div
-                class="col-lg-6 col-md-6 scroll-item text-center"
-                data-rate="0.4"
-                data-direction="vertical"
-              >
-                <img class="img-2" src="/assets/images/image-c.jpg" alt="" />
-              </div>
-            </div>
-          </div>
         </div>
       </section>
 
       <!-- Section Tools -->
-      <section id="tools" class="section-scroll">
+      <section id="addressing-systemic-racism" class="section-scroll">
         <div class="container-block">
-          <div class="text-center mb-5">
+          <div class="text-left mb-5">
             <img
               class="block-decoration"
               src="./assets/icons/block.svg"
               alt="block-image"
             />
-          </div>
-          <div class="sub-max-container">
-            <h2 class="text-green">
+            <h2
+              class="text-green mt-5"
+              data-aos="fade-right"
+              data-aos-delay="500"
+            >
               Tools to Engage Children in Age-Appropriate Conversations About
               Race
             </h2>
-            <div class="source-sans-pro sub-intro">
+            <div
+              class="source-sans-pro sub-intro"
+              data-aos="fade-right"
+              data-aos-delay="1000"
+            >
               2020 was painfully punctuated by a dramatic increase in racist
               discourse and violence that impacted our communities. Racial
               equity and diversity have always been core to our mission at First
               Book, and with our long-term partner Pizza Hut, our Diversity &
               Inclusion Needs Assessment asked educators about the issue and
               what resources, if any, they needed.
-              <br /><br />
+              <br />
             </div>
+          </div>
+          <div class="sub-max-container">
             <div class="row mt-5">
               <div class="col-lg-5 col-md-5">
-                <div class="tool-box d-flex">
+                <div
+                  class="tool-box d-flex"
+                  data-aos="fade-up"
+                  data-aos-delay="1500"
+                >
                   <div>
                     <div class="number clarendon text-green">66%</div>
                     <div class="tool-text">
@@ -776,7 +747,11 @@
               </div>
               <div class="col-lg-7 col-md-7">
                 <div class="row">
-                  <div class="col-lg-12 mb-3">
+                  <div
+                    class="col-lg-12 mb-3"
+                    data-aos="fade-up"
+                    data-aos-delay="2000"
+                  >
                     <div class="tool-box-2 d-flex">
                       <div class="number clarendon text-green">53%</div>
                       <div class="tool-text">
@@ -785,12 +760,16 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-lg-12">
+                  <div
+                    class="col-lg-12"
+                    data-aos="fade-up"
+                    data-aos-delay="2500"
+                  >
                     <div class="tool-box-2 d-flex">
-                      <div class="number clarendon text-green">53%</div>
+                      <div class="number clarendon text-green">59%</div>
                       <div class="tool-text">
-                        of respondents said their school does not provide
-                        training resources on the topic of race and racism.
+                        of respondents are white; 70% of their students are
+                        Latinx and Black.
                       </div>
                     </div>
                   </div>
@@ -800,15 +779,14 @@
           </div>
 
           <div class="barriers">
-            <h4 class="clarendon mb-3">
+            <h4 class="clarendon mb-3" data-aos="fade-up" data-aos-delay="500">
               Educators’ most common barriers to race-related conversations:
             </h4>
             <div class="row justify-content-center">
               <div
                 class="col-lg-2 col-md-2 col-sm-12 col-xs-12"
                 data-aos="fade-right"
-                data-aos-duration="500"
-                data-aos-delay="500"
+                data-aos-delay="1000"
               >
                 <div class="barrier-num clarendon text-green">1</div>
                 <div class="barrier-text">
@@ -819,8 +797,7 @@
               <div
                 class="col-lg-2 col-md-2 col-sm-12 col-xs-12"
                 data-aos="fade-right"
-                data-aos-duration="500"
-                data-aos-delay="800"
+                data-aos-delay="1500"
               >
                 <div class="barrier-num clarendon text-green">2</div>
                 <div class="barrier-text">
@@ -830,8 +807,7 @@
               <div
                 class="col-lg-2 col-md-2 col-sm-12 col-xs-12"
                 data-aos="fade-right"
-                data-aos-duration="500"
-                data-aos-delay="1200"
+                data-aos-delay="2000"
               >
                 <div class="barrier-num clarendon text-green">3</div>
                 <div class="barrier-text">Fear of using the wrong language</div>
@@ -839,8 +815,7 @@
               <div
                 class="col-lg-2 col-md-2 col-sm-12 col-xs-12"
                 data-aos="fade-right"
-                data-aos-duration="500"
-                data-aos-delay="1500"
+                data-aos-delay="2500"
               >
                 <div class="barrier-num clarendon text-green">4</div>
                 <div class="barrier-text">
@@ -850,8 +825,7 @@
               <div
                 class="col-lg-2 col-md-2 col-sm-12 col-xs-12"
                 data-aos="fade-right"
-                data-aos-duration="500"
-                data-aos-delay="1800"
+                data-aos-delay="3000"
               >
                 <div class="barrier-num clarendon text-green">5</div>
                 <div class="barrier-text">Lack of personal knowledge</div>
@@ -864,8 +838,14 @@
       <!-- Section Empowering Educators series-->
       <section id="educators-series">
         <div class="container-block">
-          <h2 class="text-primary clarendon">Empowering Educators series</h2>
-          <div class="source-sans-pro sub-intro">
+          <h2 class="text-primary clarendon" data-aos="fade-up">
+            Empowering Educators series
+          </h2>
+          <div
+            class="source-sans-pro sub-intro"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
             In response to these findings, First Book and Pizza Hut launched
             <a
               href="https://www.fbmarketplace.org/empowering-educators"
@@ -877,11 +857,18 @@
           </div>
 
           <div class="row mb-5">
-            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-              <img
-                src="./assets/images/power-1.jpg"
-                alt="Empowering Educators: A Convening on Racial Equity in Education."
-              />
+            <div
+              class="col-lg-6 col-md-6 col-sm-6 col-xs-12"
+              data-aos="fade-up-right"
+            >
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/z0Pd2J_Qi4U?controls=0"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
             </div>
             <div
               class="col-lg-6 col-md-6 col-sm-6 col-xs-12 d-flex align-items-center"
@@ -889,19 +876,30 @@
               <div class="content mt-3">
                 <b class="text-primary"
                   >Empowering Educators: A Convening on Racial Equity in
-                  Education.</b
+                  Education</b
                 >
                 <div class="text-white mt-2">
-                  A 4-hour webcast on anti-racist teaching and practical
-                  guidance for educators
+                  This four-hour webcast elevated discussions on anti-racist
+                  teaching and practical guidance for educators.
                 </div>
                 <ul>
                   <li>
-                    <span>7,000+</span> educators attended;
-                    <span>13,000+</span> registered
+                    <span id="odometer7" class="odometer">0000</span>+ educators
+                    attended;
+                    <span id="odometer8" class="odometer">00000</span>+
+                    registered
                   </li>
-                  <li><span>210,000</span> students nationwide impacted</li>
+                  <li>
+                    <span id="odometer9" class="odometer">0000</span> students
+                    nationwide impacted
+                  </li>
                 </ul>
+                <a
+                  href="https://www.youtube.com/watch?v=z0Pd2J_Qi4U&feature=youtu.be"
+                  target="_blank"
+                >
+                  <button class="btn-white mt-4">WATCH THE WEBCAST</button></a
+                >
               </div>
             </div>
           </div>
@@ -911,43 +909,79 @@
               class="col-lg-6 col-md-6 col-sm-6 col-xs-12 d-flex align-items-center"
             >
               <div class="content mt-3">
-                <b class="text-primary">Guidebook on Race & Racism.</b>
+                <b class="text-primary">Guidebook on Race and Racism</b>
                 <div class="text-white mt-2">
-                  50 pages of information, research, and practical tools to
-                  support discussions on race and diversity
+                  This 50-page guidebook offers in-depth information, research,
+                  and practical tools to support discussions on race and
+                  diversity.
                 </div>
                 <ul>
-                  <li><span>8,200+</span> unique downloads</li>
-                  <li><span>245,000</span> children reached</li>
+                  <li>
+                    <span id="odometer10" class="odometer">0000</span>+ unique
+                    downloads
+                  </li>
+                  <li>
+                    <span id="odometer11" class="odometer">000000</span>
+                    children reached
+                  </li>
                 </ul>
+                <a
+                  href="https://www.fbmarketplace.org/downloads/dl/file/id/682/product/0/empowering_educators_a_guidebook_on_race_racism.pdf"
+                  target="_blank"
+                >
+                  <button class="btn-white mt-4">DOWNLOAD NOW</button></a
+                >
               </div>
             </div>
-            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-              <img
-                src="./assets/images/power-2.jpg"
-                alt="Guidebook on Race & Racism."
-              />
+            <div
+              class="col-lg-6 col-md-6 col-sm-6 col-xs-12"
+              data-aos="fade-up-left"
+            >
+              <a
+                href="https://www.fbmarketplace.org/downloads/dl/file/id/682/product/0/empowering_educators_a_guidebook_on_race_racism.pdf"
+                target="_blank"
+              >
+                <img
+                  src="./assets/images/power-2.jpg"
+                  alt="Guidebook on Race & Racism."
+                />
+              </a>
             </div>
           </div>
 
           <div class="row mb-5">
-            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-              <img
-                src="./assets/images/power-3.jpg"
-                alt="Digital Video Series on Race & Racism."
-              />
+            <div
+              class="col-lg-6 col-md-6 col-sm-6 col-xs-12"
+              data-aos="fade-up-right"
+            >
+              <a
+                href="https://www.youtube.com/playlist?list=PL-zZwYNuQMH0ycRc2uTg33UMbIeOPiW3s"
+                target="_blank"
+              >
+                <img
+                  src="./assets/images/empowering-educators-3.jpg"
+                  alt="Digital Video Series on Race & Racism."
+                />
+              </a>
             </div>
             <div
               class="col-lg-6 col-md-6 col-sm-6 col-xs-12 d-flex align-items-center"
             >
               <div class="content mt-3">
                 <b class="text-primary"
-                  >Digital Video Series on Race & Racism.</b
+                  >Digital Video Series on Race and Racism.</b
                 >
                 <div class="text-white mt-2">
-                  Conversations with racial justice experts and recommendations
-                  for teachers on incorporating antiracist pedagogy in classes
+                  This two-part series features conversations with racial
+                  justice experts and recommendations for teachers on
+                  incorporating antiracist pedagogy in classes.
                 </div>
+                <a
+                  href="https://www.youtube.com/playlist?list=PL-zZwYNuQMH0ycRc2uTg33UMbIeOPiW3s"
+                  target="_blank"
+                >
+                  <button class="btn-white mt-4">WATCH PART 1 NOW</button></a
+                >
               </div>
             </div>
           </div>
@@ -957,20 +991,36 @@
               class="col-lg-6 col-md-6 col-sm-6 col-xs-12 d-flex align-items-center"
             >
               <div class="content mt-3">
-                <b class="text-primary">#OwnVoices Stories.</b>
+                <b class="text-primary">#OwnVoices Stories</b>
                 <div class="text-white mt-2">
-                  A collection of five of the most popular diverse titles on the
-                  First Book Marketplace, re-issued in first-ever, even more
-                  affordable paperback editions as part of the Stories for All
-                  Project(™).
+                  This is a collection of five of the most popular diverse
+                  titles on the First Book Marketplace, re-issued in first-ever,
+                  even more affordable paperback editions as part of the Stories
+                  for All Project™.
                 </div>
+                <a
+                  href="https://www.fbmarketplace.org/empowering-educators"
+                  target="_blank"
+                >
+                  <button class="btn-white mt-4">
+                    CHECK OUT #OWNVOICES
+                  </button></a
+                >
               </div>
             </div>
-            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-              <img
-                src="./assets/images/power-4.jpg"
-                alt="#OwnVoices Stories."
-              />
+            <div
+              class="col-lg-6 col-md-6 col-sm-6 col-xs-12"
+              data-aos="fade-up-left"
+            >
+              <a
+                href="https://www.fbmarketplace.org/empowering-educators"
+                target="_blank"
+              >
+                <img
+                  src="./assets/images/power-4.jpg"
+                  alt="#OwnVoices Stories."
+                />
+              </a>
             </div>
           </div>
         </div>
@@ -979,7 +1029,10 @@
       <section id="diversity">
         <div class="container-block">
           <div class="row">
-            <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+            <div
+              class="col-lg-6 col-md-12 col-sm-12 col-xs-12"
+              data-aos="fade-right"
+            >
               <h2 class="text-green">AIA Diversity in STEM Calendar</h2>
               <div class="description mb-4">
                 With the Aerospace Industries Association, we launched the
@@ -1006,12 +1059,12 @@
               </div>
             </div>
             <div class="col-lg-12">
-              <div class="qoute source-sans-pro">
+              <div class="qoute source-sans-pro" data-aos="fade-up">
                 <div class="qoute-icon">
                   <img src="./assets/icons/qoute-b.svg" alt="qoute-icon" />
                 </div>
                 I don’t know what I would do without First Book resources. As an
-                educator who has been focused and practicing racial equity and
+                educator who has been focused on practicing racial equity and
                 anti-racist education for 25 years, having inclusive, relevant,
                 and current reading materials for myself and my students is
                 essential… The teacher toolkits on Bias, Diversity and
@@ -1030,19 +1083,23 @@
         </div>
       </section>
 
-      <section id="research" class="section-scroll">
+      <section id="research-and-insights" class="section-scroll">
         <div class="container-block">
           <img
             class="block-decoration"
             src="./assets/icons/block-b.svg"
             alt="block-image"
           />
-          <div class="equity-introduction mt-5">
+          <div class="equity-introduction mt-5" data-aos="fade-right">
             <h2>New Research and Models to Advance Educational Equity</h2>
-            <div class="description mt-4 mb-5">
-              First Book is regularly piloting new models and approaches using
-              research and continuous feedback from educators on the ground.<br />
-            </div>
+          </div>
+          <div
+            class="description mt-4 mb-5"
+            data-aos="fade-right"
+            data-aos-delay="500"
+          >
+            First Book is regularly piloting new models and approaches using
+            research and continuous feedback from educators on the ground.<br />
           </div>
           <div class="row reverse-flow mt-5 pb-5 align-items-center">
             <div class="col-lg-6 col-sm-6 col-xs-12">
@@ -1063,21 +1120,42 @@
               <div class="data-content">
                 <div class="row">
                   <div class="col-lg-4 col-md-4 col-xs-12">
-                    <div class="number clarendon text-green">82%</div>
+                    <div class="number clarendon text-green">
+                      <span
+                        data-purecounter-start="0"
+                        data-purecounter-end="82"
+                        class="purecounter"
+                        >0</span
+                      >%
+                    </div>
                     <div class="text">
                       of educators said the program increased students’
                       engagement in reading.
                     </div>
                   </div>
                   <div class="col-lg-4 col-md-4 col-xs-12">
-                    <div class="number clarendon text-green">81%</div>
+                    <div class="number clarendon text-green">
+                      <span
+                        data-purecounter-start="0"
+                        data-purecounter-end="81"
+                        class="purecounter"
+                        >0</span
+                      >%
+                    </div>
                     <div class="text">
                       of educators said the program helped children realize they
                       are learners.
                     </div>
                   </div>
                   <div class="col-lg-4 col-md-4 col-xs-12">
-                    <div class="number clarendon text-green">40%</div>
+                    <div class="number clarendon text-green">
+                      <span
+                        data-purecounter-start="0"
+                        data-purecounter-end="40"
+                        class="purecounter"
+                        >0</span
+                      >%
+                    </div>
                     <div class="text">
                       growth in the First Book Network, increasing sustainable
                       impact
@@ -1086,7 +1164,10 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-6 col-sm-6 col-xs-12 text-center mb-3">
+            <div
+              class="col-lg-6 col-sm-6 col-xs-12 text-center mb-3"
+              data-aos="fade-up-left"
+            >
               <img
                 class="mx-auto girl"
                 src="/assets/images/omg-awards.jpg"
@@ -1096,7 +1177,10 @@
           </div>
 
           <div class="row mt-5 pb-5 align-items-center">
-            <div class="col-lg-6 col-sm-6 col-xs-12 text-center mb-3">
+            <div
+              class="col-lg-6 col-sm-6 col-xs-12 text-center mb-3"
+              data-aos="fade-up-right"
+            >
               <img
                 class="mx-auto fit-img"
                 src="/assets/images/games.png"
@@ -1105,7 +1189,7 @@
             </div>
             <div class="col-lg-6 col-sm-6 col-xs-12">
               <div class="title-text clarendon text-blue mb-3">
-                Games & Learning: Creating digital learning solutions
+                Games & Learning: Creating Digital Learning Solutions
               </div>
               <div class="content">
                 With COVID-19 turning homes into classrooms, First Book
@@ -1118,21 +1202,34 @@
                 >
                 (G&L) to make digital learning accessible to children in need.
                 The result is a comprehensive resource of e-books and games on
-                the First Book Marketplace that helps educators make the
-                learning experience fun and engaging.
+                the
+                <a
+                  class="text-blue"
+                  href="https://www.fbmarketplace.org/"
+                  target="_blank"
+                  >First Book Marketplace</a
+                >
+                that helps educators make the learning experience fun and
+                engaging.
               </div>
               <div class="data-content">
                 <div class="row">
                   <div class="col-lg-4 col-md-4 col-xs-12">
-                    <div class="number clarendon text-green">600,000</div>
+                    <div class="number clarendon text-green">
+                      <span id="odometer15" class="odometer">000000</span>
+                    </div>
                     <div class="text">student users</div>
                   </div>
                   <div class="col-lg-4 col-md-4 col-xs-12">
-                    <div class="number clarendon text-green">20,000</div>
+                    <div class="number clarendon text-green">
+                      <span id="odometer16" class="odometer">00000</span>
+                    </div>
                     <div class="text">classroom access codes distributed</div>
                   </div>
                   <div class="col-lg-4 col-md-4 col-xs-12">
-                    <div class="number clarendon text-green">3,000</div>
+                    <div class="number clarendon text-green">
+                      <span id="odometer17" class="odometer">0000</span>
+                    </div>
                     <div class="text">educators received access codes</div>
                   </div>
                 </div>
@@ -1140,7 +1237,7 @@
             </div>
           </div>
           <div class="row mt-5">
-            <div class="col-lg-6 col-sm-6 col-xs-12">
+            <div class="col-lg-6 col-sm-6 col-xs-12" data-aos="fade-up">
               <img src="/assets/images/logo-a.png" alt="Foundation Logo" />
               <div class="title-text clarendon text-blue mb-3 mt-3">
                 FAO Research: Supporting Children Experiencing Trauma
@@ -1171,7 +1268,11 @@
                 </ul>
               </div>
             </div>
-            <div class="col-lg-6 col-sm-6 col-xs-12">
+            <div
+              class="col-lg-6 col-sm-6 col-xs-12"
+              data-aos="fade-up"
+              data-aos-delay="500"
+            >
               <img src="/assets/images/logo-b.png" alt="KPMG Logo" />
               <div class="title-text clarendon text-blue mb-3 mt-3">
                 KPMG and KFFL: Thought Partnership with First Book
@@ -1193,12 +1294,12 @@
         </div>
       </section>
 
-      <section id="forward" class="section-scroll">
-        <div class="container-block">
+      <section id="looking-forward-to-2021" class="section-scroll">
+        <div class="container-block" data-aos="fade-up">
           <div class="forward-introduction">
             <h2 class="text-primary">Looking Forward to 2021</h2>
             <div class="description mt-4 mb-5">
-              FiThere are enormous challenges ahead in 2021. COVID-19 will have
+              There are enormous challenges ahead in 2021. COVID-19 will have
               lasting effects, with more families in distress, and previously
               strapped school budgets further endangered by state and local
               budget deficits.
@@ -1234,7 +1335,7 @@
                 and resource creation.
               </div>
               <div class="col-lg-6 small-text">
-                <b>Expansion of Educator-driven Resources:</b> First Book will
+                <b>Expansion of Educator-Driven Resources:</b> First Book will
                 continue to address the needs related to distance learning and
                 COVID-19, including device and internet connectivity, mental
                 health support, and sharing of best practices between formal and
@@ -1246,10 +1347,14 @@
         <img src="/assets/images/forward.jpg" alt="Gratitude picture" />
       </section>
 
-      <section id="action" class="section-scroll">
+      <section id="taking-action" class="section-scroll">
         <div class="container-block">
-          <h2>Taking Action</h2>
-          <div class="content mx-auto mt-4 mb-4">
+          <h2 data-aos="fade-up">Taking Action</h2>
+          <div
+            class="content mx-auto mt-4 mb-4"
+            data-aos="fade-up"
+            data-aos-delay="500"
+          >
             <b>
               Delivering on our nation’s promise of a more perfect union
               fundamentally requires equal access to quality education.</b
@@ -1266,7 +1371,12 @@
             href="https://support.firstbook.org/give/121944/&_ga=2.237178624.1423440979.1613557755-1440923037.1589692852#!/donation/checkout?utm_source=nav&utm_medium=web&utm_campaign=maindonate"
             target="_blank"
           >
-            <button class="source-sans-pro mt-3" id="donate">
+            <button
+              class="source-sans-pro mt-3"
+              id="donate"
+              data-aos="flip-up"
+              data-aos-delay="1500"
+            >
               DONATE TODAY
             </button>
           </a>
@@ -1338,6 +1448,8 @@
         </div>
       </footer>
     </div>
+    <script src="js/jquery.visible.min.js"></script>
+    <script src="js/odometer.min.js"></script>
     <script src="js/purecounter.js"></script>
     <script src="js/bootstrap.min.js"></script>
   </body>

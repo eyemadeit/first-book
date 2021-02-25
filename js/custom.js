@@ -1,5 +1,8 @@
 $(document).ready(function () {
-  AOS.init();
+  AOS.init({
+    duration: 1000,
+    once: true,
+  });
   // Sidebar Functions
   $("#open_sidebar").click(function () {
     $("#sidebar-navigation").addClass("open");
@@ -33,6 +36,11 @@ $(document).ready(function () {
 
   $(document).on("scroll", function () {
     /* Add class to navigation on currently scrolled section */
+    if ($(this).scrollTop() > 100) {
+      $(".header-navigation").addClass("scrolled");
+    } else {
+      $(".header-navigation").removeClass("scrolled");
+    }
     var position = $(this).scrollTop() + 250;
     $(".section-scroll").each(function () {
       var target = $(this).offset().top;
@@ -43,39 +51,71 @@ $(document).ready(function () {
       }
     });
 
-    // if ($("#donate").visible(true)) {
-    //   $(".header-menu-list > li > a[href=\\#action]").addClass("active");
-    // } else {
-    //   $(".header-menu-list > li > a[href=\\#action]").removeClass("active");
-    // }
+    /* Impact at a glance */
 
+    if ($("#odometer1").visible(true)) {
+      $("#odometer1").addClass("odometer");
+      odometer1.innerHTML = "50000";
+    }
+    if ($("#odometer2").visible(true)) {
+      $("#odometer2").addClass("odometer");
+      odometer2.innerHTML = "500000";
+    }
+    if ($("#odometer3").visible(true)) {
+      $("#odometer3").addClass("odometer");
+      odometer3.innerHTML = "15";
+    }
+    if ($("#odometer4").visible(true)) {
+      $("#odometer4").addClass("odometer");
+      odometer4.innerHTML = "5";
+    }
+    if ($("#odometer5").visible(true)) {
+      $("#odometer5").addClass("odometer");
+      odometer5.innerHTML = "200";
+    }
+    if ($("#odometer6").visible(true)) {
+      $("#odometer6").addClass("odometer");
+      odometer6.innerHTML = "18.6";
+    }
     /* end */
 
-    /* Add Custom parallax effect on image */
-    var start = $("#parallax").position().top;
-    var end = $("#tools").position().top;
+    /* Empowering */
 
-    const target = document.querySelectorAll(".scroll-item");
+    if ($("#odometer7").visible(true)) {
+      $("#odometer7").addClass("odometer");
+      odometer7.innerHTML = "7000";
+    }
+    if ($("#odometer8").visible(true)) {
+      $("#odometer8").addClass("odometer");
+      odometer8.innerHTML = "13000";
+    }
+    if ($("#odometer9").visible(true)) {
+      $("#odometer9").addClass("odometer");
+      odometer9.innerHTML = "210000";
+    }
+    if ($("#odometer10").visible(true)) {
+      $("#odometer10").addClass("odometer");
+      odometer10.innerHTML = "8200";
+    }
+    if ($("#odometer11").visible(true)) {
+      $("#odometer11").addClass("odometer");
+      odometer11.innerHTML = "245000";
+    }
+    /* end */
 
-    var index = 0,
-      length = target.length;
-    if (
-      $(this).scrollTop() >= start &&
-      $(this).scrollTop() <= end - end * 0.1
-    ) {
-      for (index; index < length; index++) {
-        var pos = (window.pageYOffset - start) * target[index].dataset.rate;
+    /* Research */
 
-        if (target[index].dataset.direction === "vertical") {
-          target[index].style.transform = "translate3d(0px," + pos + "px, 0px)";
-        } else {
-          var posX = (window.pageYOffset - start) * target[index].dataset.ratex;
-          var posY = (window.pageYOffset - start) * target[index].dataset.ratey;
-
-          target[index].style.transform =
-            "translate3d(" + posX + "px, " + posY + "px, 0px)";
-        }
-      }
+    if ($("#odometer15").visible(true)) {
+      $("#odometer15").addClass("odometer");
+      odometer15.innerHTML = "600000";
+    }
+    if ($("#odometer16").visible(true)) {
+      $("#odometer16").addClass("odometer");
+      odometer16.innerHTML = "20000";
+    }
+    if ($("#odometer17").visible(true)) {
+      $("#odometer17").addClass("odometer");
+      odometer17.innerHTML = "3000";
     }
     /* end */
   });

@@ -45,6 +45,10 @@ button {
   font-size: 18px;
 }
 
+.odometer.odometer-auto-theme {
+  font-family: "Clarendon", sans-serif;
+}
+
 .clarendon {
   font-family: "Clarendon", sans-serif;
 }
@@ -63,6 +67,16 @@ button {
 
 .text-blue {
   color: #008ec6;
+}
+
+.btn-white {
+  border: 2px solid white;
+  border-radius: 3px;
+  color: white;
+  padding: 10px 28px;
+  font-size: 12px;
+  background: transparent;
+  font-weight: 700;
 }
 
 .text-primary {
@@ -87,14 +101,14 @@ button {
 
 h2 {
   color: #c00000;
-  font-size: 32px;
+  font-size: 36px;
   font-family: "Clarendon", sans-serif;
   font-weight: 700;
 }
 
 .description {
   font-family: "Source-sans-pro", sans-serif;
-  font-size: 17px;
+  font-size: 19px;
 }
 
 .cst-btn {
@@ -149,6 +163,29 @@ h2 {
       outline: none;
       background-position: center;
       background-repeat: no-repeat;
+    }
+  }
+  &.scrolled {
+    animation-name: scrolled;
+    animation-duration: 1000ms;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes scrolled {
+    0% {
+      top: 0px;
+      opacity: 1;
+    }
+    25% {
+      top: -80px;
+      opacity: 0.2;
+    }
+    100% {
+      top: 0px;
+      opacity: 1;
     }
   }
 }
@@ -233,7 +270,7 @@ h2 {
 
 /* Section Ceo */
 
-section#ceo {
+section#from-our-ceo {
   padding-top: 80px;
   padding-bottom: 80px;
   background: url("../assets/backgrounds/background-a.svg");
@@ -268,6 +305,7 @@ section#ceo {
     max-width: 670px;
     .qoute-icon {
       position: absolute;
+      z-index: -1;
       top: -10px;
       left: -10px;
       img {
@@ -292,9 +330,10 @@ section#ceo {
   }
 }
 
-section#impact {
+section#at-a-glance {
   background: url("../assets/backgrounds/background-b.svg");
   @include mixinBG();
+  padding-bottom: 100px;
   h2 {
     margin-top: 50px;
     margin-bottom: 20px;
@@ -310,7 +349,7 @@ section#impact {
     height: 100%;
   }
   .description {
-    max-width: 620px;
+    max-width: 820px;
     margin-bottom: 40px;
   }
   .counter-block {
@@ -327,7 +366,7 @@ section#impact {
   }
 }
 
-section#response {
+section#combating-covid-19 {
   background: url("../assets/backgrounds/background-c.svg");
   @include mixinBG();
   .container-block {
@@ -336,6 +375,7 @@ section#response {
   .response-item {
     overflow: hidden;
     position: relative;
+    cursor: pointer;
     img {
       width: 100%;
       height: 100%;
@@ -348,7 +388,7 @@ section#response {
     margin-bottom: 20px;
   }
   .description {
-    max-width: 620px;
+    max-width: 820px;
     margin-bottom: 40px;
   }
   .response-card {
@@ -475,6 +515,7 @@ section#parallax {
   background: url("../assets/backgrounds/background-c.svg");
   @include mixinBG();
   padding-top: 100px;
+  padding-bottom: 40px;
   .qoute {
     position: relative;
     font-size: 22px;
@@ -485,6 +526,7 @@ section#parallax {
     width: 100%;
     .qoute-icon {
       position: absolute;
+      z-index: -1;
       top: -10px;
       left: -10px;
       img {
@@ -519,20 +561,19 @@ section#parallax {
   }
 }
 
-section#tools {
+section#addressing-systemic-racism {
   background: url("../assets/backgrounds/background-d.svg");
   @include mixinBG();
   padding-bottom: 100px;
   h2 {
-    text-align: center;
+    text-align: left;
     max-width: 800px;
-    margin: 0 auto;
   }
   .sub-intro {
-    text-align: center;
+    text-align: left;
     max-width: 700px;
     width: 100%;
-    margin: 20px auto 20px auto;
+    margin: 20px 0;
   }
   .sub-max-container {
     max-width: 860px;
@@ -585,7 +626,7 @@ section#tools {
     }
     .barrier-text {
       font-size: 13px;
-      font-weight: 600;
+      font-weight: 500;
       opacity: 0.9;
     }
   }
@@ -636,11 +677,11 @@ section#diversity {
   padding-top: 60px;
   padding-bottom: 100px;
   h2 {
-    max-width: 400px;
+    max-width: 410px;
     margin-bottom: 20px;
   }
   .description {
-    max-width: 450px;
+    max-width: 500px;
   }
   #relative {
     position: relative;
@@ -734,6 +775,7 @@ section#diversity {
     margin: 40px auto 30px auto;
     .qoute-icon {
       position: absolute;
+      z-index: -1;
       top: -10px;
       left: -10px;
       img {
@@ -747,17 +789,21 @@ section#diversity {
   }
 }
 
-section#research {
+section#research-and-insights {
   background: url("../assets/backgrounds/background-f.svg");
   @include mixinBG();
   padding-bottom: 100px;
   .equity-introduction {
-    max-width: 600px;
+    max-width: 700px;
   }
   .title-text {
     font-size: 20px;
     width: 100%;
     max-width: 460px;
+  }
+
+  .description {
+    max-width: 800px;
   }
 
   .data-content {
@@ -793,7 +839,7 @@ section#research {
   }
 }
 
-section#forward {
+section#looking-forward-to-2021 {
   background: url("../assets/backgrounds/background-h.svg");
   @include mixinBG();
   padding-bottom: 20px;
@@ -807,7 +853,7 @@ section#forward {
   }
   .description {
     color: white;
-    max-width: 700px;
+    max-width: 800px;
   }
   .sub-container {
     max-width: 700px;
@@ -829,7 +875,7 @@ section#forward {
   }
 }
 
-section#action {
+section#taking-action {
   background: url("../assets/backgrounds/background-g.svg");
   @include mixinBG();
   text-align: center;
