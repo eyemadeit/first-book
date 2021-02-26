@@ -61,10 +61,6 @@ $(document).ready(function () {
       $("#odometer2").addClass("odometer");
       odometer2.innerHTML = "500000";
     }
-    if ($("#odometer3").visible(true)) {
-      $("#odometer3").addClass("odometer");
-      odometer3.innerHTML = "15";
-    }
     if ($("#odometer4").visible(true)) {
       $("#odometer4").addClass("odometer");
       odometer4.innerHTML = "5";

@@ -108,6 +108,8 @@ h2 {
 .description {
   font-family: "Source-sans-pro", sans-serif;
   font-size: 19px;
+  max-width: 1000px !important;
+  width: 100% !important;
 }
 
 .cst-btn {
@@ -544,6 +546,11 @@ section#combating-covid-19 .response-item:hover .overlay {
   height: 100%;
 }
 
+section#combating-covid-19 #responseD ul b,
+section#combating-covid-19 #responseC ul b {
+  font-weight: 500 !important;
+}
+
 section#combating-covid-19 .modal-dialog {
   max-width: 1200px !important;
   width: 100%;
@@ -566,6 +573,10 @@ section#combating-covid-19 .modal-dialog .modal-content {
 }
 
 section#combating-covid-19 .modal-dialog .modal-content b {
+  font-weight: 500;
+}
+
+section#combating-covid-19 .modal-dialog .modal-content ul b {
   font-weight: 600;
 }
 
@@ -1066,7 +1077,7 @@ section#looking-forward-to-2021 .forward-introduction {
 
 section#looking-forward-to-2021 .description {
   color: white;
-  max-width: 800px;
+  max-width: 800px !important;
 }
 
 section#looking-forward-to-2021 .sub-container {
