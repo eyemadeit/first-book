@@ -12,12 +12,14 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 html,
 body {
   color: #404042;
   font-family: "Source-sans-pro", sans-serif;
+  overflow-x: hidden;
 }
 
 button {
@@ -27,6 +29,11 @@ button {
 
 button:hover {
   opacity: 0.8 !important;
+}
+
+iframe {
+  max-height: 315px;
+  height: 100%;
 }
 
 .flex {
@@ -1094,13 +1101,17 @@ section#looking-forward-to-2021 .sub-container .small-text b {
   font-weight: 900;
 }
 
-section#looking-forward-to-2021 img {
+section#looking-forward-to-2021 img#forward-float {
   position: absolute;
   top: 50%;
   right: 0%;
   -webkit-transform: translate(0%, -50%);
           transform: translate(0%, -50%);
   z-index: 0;
+}
+
+section#looking-forward-to-2021 img {
+  display: none;
 }
 
 section#taking-action {

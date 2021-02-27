@@ -1,3 +1,10 @@
+@media only screen and (max-width: 1200px) {
+  section#looking-forward-to-2021 .forward-introduction,
+  section#looking-forward-to-2021 .sub-container {
+    max-width: 550px;
+  }
+}
+
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
   /* CEO Section */
@@ -38,6 +45,24 @@
     width: 100%;
     max-width: 100% !important;
   }
+  section#addressing-systemic-racism .first-tool-parent {
+    margin-bottom: 16px;
+  }
+  section#addressing-systemic-racism .tool-box.first-tool {
+    margin-bottom: 20px;
+  }
+  section#addressing-systemic-racism .tool-box.first-tool .number.clarendon.text-green {
+    font-size: 48px !important;
+    padding-right: 20px !important;
+  }
+  section#addressing-systemic-racism .tool-box.first-tool div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
   section#parallax .fit-img {
     display: block;
   }
@@ -58,6 +83,17 @@
     display: -ms-flexbox !important;
     display: flex !important;
     margin: 10px auto;
+  }
+  section#looking-forward-to-2021 .forward-introduction,
+  section#looking-forward-to-2021 .sub-container {
+    max-width: 100% !important;
+  }
+  section#looking-forward-to-2021 img#forward-float {
+    display: none;
+  }
+  section#looking-forward-to-2021 img {
+    display: block;
+    margin: 70px auto 50px auto;
   }
 }
 

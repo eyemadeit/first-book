@@ -19,12 +19,15 @@ $(document).ready(function () {
     }
   });
 
+  var state = true;
+
   $("#read-more").click(function () {
-    var text = $(this).html();
-    if (text === "READ MORE") {
-      $(this).html("READ LESS");
+    if (state) {
+      $("#read-more").text("READ LESS");
+      state = false;
     } else {
-      $(this).html("READ MORE");
+      $("#read-more").text("READ MORE");
+      state = true;
     }
     $("#more-content").toggleClass("more");
   });
