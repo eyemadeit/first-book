@@ -1108,6 +1108,7 @@ section#looking-forward-to-2021 img#forward-float {
   -webkit-transform: translate(0%, -50%);
           transform: translate(0%, -50%);
   z-index: 0;
+  display: block;
 }
 
 section#looking-forward-to-2021 img {
