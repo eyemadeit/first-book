@@ -375,7 +375,7 @@ section#at-a-glance {
   }
 }
 
-section#combating-covid-19 {
+section#covid-19-response-highlights {
   background: url("../assets/backgrounds/background-c.svg");
   @include mixinBG();
   .container-block {
@@ -584,7 +584,7 @@ section#parallax {
   }
 }
 
-section#addressing-systemic-racism {
+section#racial-equity {
   background: url("../assets/backgrounds/background-d.svg");
   @include mixinBG();
   padding-bottom: 100px;
@@ -822,10 +822,11 @@ section#diversity {
   }
 }
 
-section#research-and-insights {
-  background: url("../assets/backgrounds/background-f.svg");
+section#innovative-pilots {
+  background: url("../assets/backgrounds/background-e.svg");
   @include mixinBG();
   padding-bottom: 100px;
+  padding-top: 40px;
   .equity-introduction {
     max-width: 700px;
   }
@@ -836,7 +837,7 @@ section#research-and-insights {
   }
 
   .description {
-    max-width: 800px;
+    max-width: 750px !important;
   }
 
   .data-content {
@@ -909,6 +910,74 @@ section#looking-forward-to-2021 {
   }
   img {
     display: none;
+  }
+}
+
+section#omg-book-awards {
+  background: url("../assets/backgrounds/background-f.svg");
+  @include mixinBG();
+  padding-bottom: 220px;
+  position: relative;
+  .container-block {
+    position: relative;
+    z-index: 2;
+  }
+
+  .omg-introduction {
+    max-width: 890px;
+    padding-top: 30px;
+  }
+
+  .sub-container {
+    max-width: 700px;
+    width: 100%;
+    .small-text {
+      color: white;
+      font-size: 14px;
+      b {
+        font-weight: 900;
+      }
+    }
+  }
+
+  .data-content {
+    border: 2px solid #317851;
+    border-radius: 22px;
+    padding: 30px 30px;
+    .number {
+      font-size: 40px;
+      font-weight: 600;
+      line-height: 30px;
+      margin-bottom: 12px;
+      margin-top: 10px;
+    }
+    .text {
+      font-size: 13px;
+    }
+  }
+
+  .girl {
+    max-width: 460px;
+    width: 100%;
+  }
+
+  a {
+    text-decoration: underline;
+  }
+
+  img#forward-float {
+    position: absolute;
+    top: 55%;
+    right: 0%;
+    transform: translate(-0%, -50%);
+    z-index: 0;
+    display: block;
+  }
+  img {
+    display: none;
+  }
+  img.block-decoration {
+    display: block !important;
   }
 }
 

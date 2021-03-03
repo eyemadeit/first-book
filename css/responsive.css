@@ -88,10 +88,12 @@
   section#looking-forward-to-2021 .sub-container {
     max-width: 100% !important;
   }
-  section#looking-forward-to-2021 img#forward-float {
+  section#looking-forward-to-2021 img#forward-float,
+  section#omg-book-awards img#forward-float {
     display: none;
   }
-  section#looking-forward-to-2021 img {
+  section#looking-forward-to-2021 img,
+  section#omg-book-awards img {
     display: block;
     margin: 70px auto 50px auto;
   }
